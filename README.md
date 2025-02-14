@@ -1,29 +1,28 @@
 java c
-EE6221 - ROBOTICS AND INTELLIGENT SENSORS
-SEMESTER 1 EXAMINATION 2024-2025
+EE6221-ROBOTICS AND INTELLIGENT SENSORS
+SEMESTER 2 EXAMINATION 2023-2024
 1. A robotic manipulator with six joints is shown in Figure 1.
 
 Figure 1
 (a) Obtain the link coordinate diagram by using the Denavit-Hartenberg (D-H) algorithm. (12 Marks)
-Note: Question No. 1 continues on page 2.
-(b) ।Derive the kinematic parameters of the robot based on the coordinate diagram obtained in part (a). (8 Marks)
-2. The dynamic equations of a robot when it is in contact with a workpiece are given as follows:
-
-where u, u2, u3 are the control inputs, q1,92.93 are the joint variables, d1,d2, d3 are the unknown disturbances and f=22(q3-0.2) is the contact force. The system possesses unmodelled resonances at 5 rad/s, 10 rad/s and 15 rad/s.
-(a). If di, d2, d3 are zero, design a hybrid position and force controller for the robot to track the desired trajectories q92 and the desired force fa. The motion control subspace should be overdamped with a damping ratio of 1.05, and the force control subspace should be critically damped. The control system should not excite all the unmodelled resonances. (14 Marks)
-(b). If d,dz, d3 are not zero, derive the error equations of t代 写EE6221 - ROBOTICS AND INTELLIGENT SENSORS SEMESTER 1 EXAMINATION 2024-2025C/C++
-代做程序编程语言he system based on the hybrid position and force controller designed in part (a). (6 Marks)
-3. (a) A mobile platform. is shown in Figure 2 The platform. has one steered standard wheel and two standard wheels. A local reference frame. (xr, yr) is assigned as shown in the figure. The radius of each standard wheel is 10 cm. If the rotational velocities of the steered standard wheel and the two standard wheels are denoted by ss, s1, s2 respectively, derive the rolling and sliding constraints of the mobile platform.
+(b) Derive the kinematic parameters of the robot based on the coordinate diagramobtained in part (a). (8 Marks)
+2. A Cartesian robot with two degrees of freedom is in contact with a workpiece, which is shown in Figure 2.
 
 Figure 2
-(b). A robot manipulator with four ioint variables is mounted on a mobile platform. The transformation matrix from tool tip to base coordinate of the robot is given as:
+The dynamic equations of the robot, when it is not in contact with the workpiece, aredgiven as follows:
 
-where q1,q2,q3 are the joint variables for the major axes, q4 is the tool roll angle, Ck = cos qk and S = sin qk.
-(i) Derive the tool configuration Jacobian matrix of the manipulator.
-(ii) Given that x= 0.2, y=0.2, z=0, solve the inverse kinematic problem to obtain q1, 92, 93. (Note: orientation is not required).
-(iii) Determine the approach vector of the robot at this joint configuration. (12 Marks)
+where ux, u, are the control inputs and dy,dy are the unknown constant disturbances.The stiffness of the workpiece in any direction is given as 50 N/m and the static positionof the workpiece in the v axis is 0.25 m. The system possesses unmodelled resonances at7 rad/s and 15 rad/s.
+(a) Assume that dy=0 and dy=0. Design a hybrid position and force controller for the robot. The motion control subspace should be critically damped, and the force control subspace should be overdamped with a damping ratio of 1.25. The control gains should be chosen to be as high as possible and the system should not excite all the unmodelled resonances. (13 Marks)
+(b) Assume that dy, dy are not negligible. Design an appropriate hybrid position and force controller and show that the steady state error can be eliminated.代 写EE6221 - ROBOTICS AND INTELLIGENT SENSORS SEMESTER 2 EXAMINATION 2023-2024
+代做程序编程语言 In case that the stiffness of the workpiece is wrongly estimated as 49 N/m, discuss its effects on the controller. (7 Marks)
+3. (a) A mobile robot platform. with a shape of an equilateral triangle (i.e., all three sideshave the same length) attached to a square is shown in Figure 3. The robot has onesteered standard wheel, two standard wheels and one castor wheel. A local referenceframe. (x yr) is assigned at the mid-point between the steered standard wheel andthe castor wheel. The radius of each standard wheel is 6 cm and the radius of thecastor wheel is 3 cm. Let the rotational velocities of the steered standard wheel, thetwo standard wheels and the castor wheel be denoted by фss, ds1, s2, and фc,respectively. Derive the rolling and sliding constraints of the mobile robot.
 
+Figure 3
+(10 Marks)
+(b) A robot manipulator with three ioint variables g, g2. ga are mounted on a mobile robot. The link-coordinate homogeneous transformation matrix from the basecoordinate to the tool coordinate of the rohot maninulator is given as follows
 
+where S1 = sin (q1), S2 = sin (q2), S23 = sin(q2 + q3), C1 = cos (q1), C2 =cos(q2), C23 = cos(q2+q3).
+Solve the inverse kinematic problem using the analytic method toexpress (q1, q2, 93)T in terms of the position of the end effector (x, y, z)T(Note: the orientation is not required). (10 Marks)
 
 
 
